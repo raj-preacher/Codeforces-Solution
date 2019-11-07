@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+     int m,n;
+     cin>> m >> n;
+     int board,num;
+     int domino=2*1;
+     board=m*n;
+     num=board/domino;
+     cout<<num;
+ return 0;
+}
