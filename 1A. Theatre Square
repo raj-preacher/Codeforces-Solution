@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+      double n,m,a;
+      long long pavement_row;
+      long long pavement_col;
+      cin>> n >> m >> a;
+      pavement_row=ceil(n/a);
+      pavement_col=ceil(m/a);
+      cout<<pavement_row*pavement_col;
+     
+     
+     return 0; 
+}
