@@ -1,0 +1,51 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main(){
+int arr[5][5];
+int i,j,flag=0,k,count=0,l;
+for(i=0;i<5;i++){
+      for(j=0;j<5;j++){
+        cin>>arr[i][j];
+      }
+      
+}
+for(i=0;i<5;i++){
+      for(j=0;j<5;j++){
+            if(arr[i][j]==1){
+                  flag=1;
+                  break;
+            }
+      }
+      if(flag==1)
+      break;
+      
+}
+//cout<<"i"<<i<<"j"<<j<<endl;
+if(i<2){
+for(k=i;k<2;k++){
+      arr[k][j];
+      count++;
+}
+}
+if(i>2){
+for(k=i;k>2;k--){
+      arr[k][j];
+      count++;
+}
+}
+if(j<2){
+for(l=j;l<2;l++){
+      arr[k][l];
+      count++;
+}
+}
+if(j>2){
+for(l=j;l>2;l--){
+      arr[k][l];
+      count++;
+}
+}
+cout<<count;
+ return 0;
+}
