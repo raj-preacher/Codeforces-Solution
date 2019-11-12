@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+ 
+using namespace std;
+ 
+int main(){
+ int n;
+ cin>>n;
+ int X[n],Y[n],Z[n];
+ int sum_X=0, sum_Y=0, sum_Z=0;
+for(int i=0;i<n;i++){
+     cin>>X[i]>>Y[i]>>Z[i]; 
+}
+for(int i=0;i<n;i++){
+      sum_X+=X[i];
+      sum_Y+=Y[i];
+      sum_Z+=Z[i];
+}
+ 
+ if(sum_X==0 && sum_Y==0 && sum_Z==0){
+       cout<<"YES";
+ }else{
+       cout<<"NO";
+ }
+}
