@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main(){
+string str;
+getline(cin,str);
+vector<int>V;
+int myint;
+int m;
+for(int i=0;i<str.length();i+=2){
+      if(str[i]=='1'||str[i]=='2'||str[i]=='3'){
+             myint = atoi(&str[i]);
+      }
+      V.push_back(myint);
+}
+sort(V.begin(),V.end());
+ 
+for(m=0;m<V.size()-1;m++){
+      cout<<V[m]<<"+";
+}cout<<V[m];
+ return 0;
+}
