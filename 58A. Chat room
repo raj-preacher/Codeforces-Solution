@@ -1,0 +1,55 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main(){
+string str;
+cin>>str;
+string sum="";
+int count_h=1;
+int count_e=1;
+int count_l=1;
+int count_o=1;
+int i,j,k,l;
+for(j=0;j<str.length();j++){
+      if(str[j]=='h' && count_h==1){
+            sum+=str[j];
+            count_h++;
+            break;
+      }
+      
+}
+//cout<<j<<endl;
+for(i=j;i<str.length();i++){
+      if(str[i]=='e' && count_e==1){
+            sum+=str[i];
+            count_e++;
+            break;
+      }
+}
+//cout<<i<<endl;
+for(k=i;k<str.length();k++){
+      if(str[k]=='l' && count_l<=2){
+            sum+=str[k];
+            count_l++;
+            if(count_l>2){
+            break;
+      }
+      }
+      
+}
+//cout<<"k "<<k<<endl;
+for(l=k;l<str.length();l++){
+     if(str[l]=='o' && count_o==1){
+            sum+=str[l];
+            count_o++;
+            break;
+      }
+}
+//cout<<sum<<endl;
+if(sum=="hello"){
+      cout<<"YES";
+}else{
+      cout<<"NO";
+}
+ return 0;
+}
