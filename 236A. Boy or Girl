@@ -1,0 +1,40 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main(){
+string str;
+char curr;
+getline(cin,str);
+stack<char>S1;
+vector<char>V;
+int flag;
+for(int i=0;i<str.length();i++){
+      S1.push(str[i]);
+}
+if(S1.empty()){
+      cout<<"STACK 1 is empty";
+}
+while(!S1.empty()){
+char curr=S1.top();
+S1.pop();
+if(V.empty()){
+      V.push_back(curr);
+}else{
+      for(int i=0;i<V.size();i++){
+            flag=0;
+            if(V[i]==curr){
+                  flag=1;
+                  break;
+            }
+      }if (flag==0){
+            V.push_back(curr);
+      }
+}
+}
+if(V.size()%2==0){
+      cout<<"CHAT WITH HER!";
+}else{
+      cout<<"IGNORE HIM!";
+}
+ return 0;
+}
