@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main(){
+int stop,sum=0;
+int min=0;
+cin>>stop;
+int a[stop],b[stop];
+//a[0]=0;cin>>b[0];
+for(int i=0;i<stop;i++){
+ cin>>a[i]>>b[i];     
+}
+//cin>>a[i];b[stop]=0;
+ 
+for(int j=0;j<stop;j++){
+     if(a[j]!=NULL){
+           sum-=a[j];
+     }
+     if(b[j]!=NULL){
+           sum+=b[j];
+     }
+     if(sum>min){
+           min=sum;
+     }
+     
+}cout<<min;
+ return 0;
+}
