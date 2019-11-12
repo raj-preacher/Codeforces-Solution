@@ -1,0 +1,41 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main(){
+      int n;
+      cin>>n;
+char str[n];
+for(int i=0;i<n;i++){
+      cin>>str[i];
+}
+ 
+int count=0;
+for(int i=0;i<n;i++){
+      if(str[i]=='R'){
+            int j=i;
+            //cout<<j<<endl;
+            if(str[++j]=='R'){
+                  count++;
+            }else{
+                  int flag=1;
+            }
+      }
+      else if(str[i]=='G'){
+            int j=i;
+            if(str[++j]=='G'){
+                  count++;
+            }else{
+                 int flag=1;
+            }
+      }
+      else if(str[i]=='B'){
+            int j=i;
+            if(str[++j]=='B'){
+                  count++;
+            }else{
+                  int flag=1;
+            }
+      }
+}cout<<count;
+ return 0;
+}
